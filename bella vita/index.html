@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <style>
+    
+         #i1 {
+        width: 90%;
+        height: 400px;
+        margin-left: 140px;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+      #i2 {
+        width: 90%;
+        height: 400px;
+        margin-left: 140px;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+        #navbar {
+            border: none;
+            height: 100px;
+            width: 80%;
+            margin: auto;
+            border-bottom: 1px solid #9fa1a1;;
+        }
+        #upperNav {
+            border: none;
+            height: 58px;
+            display: flex;
+            margin-bottom: 10px;
+        }
+        #log {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #475d4b;
+        } 
+        #search{
+            margin-left: 270px;
+            margin-right: 40px;
+            margin-top: 20px;
+            font-size: 20px;
+            color: #475d4b;
+        }
+        #cart {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #475d4b;
+        }
+        #pic1{
+           margin-left: 450px;
+        }
+        #lowerNav {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #lowerNav>div {
+           border-right: 1px solid #9fa1a1;; 
+           padding-right: 10px;
+           color: #9fa1a1;
+        }
+         #choice {
+             border: none;
+             margin: auto;
+             width: 80%;
+             margin-top: 50px;
+           
+         }
+         #choicePic {
+             width: 100%;
+             border-radius: 10px;
+         }
+         #bestseller, #spot, #sol, #med, #bell{
+           text-align: center;
+           font-size: 22px;
+           font-weight: bold;
+           color: #475d4b ;
+         }
+         #b1 {
+             width: 50px;
+             height: 35px;
+         }
+         #b2 {
+            width: 50px;
+             height: 35px;  
+         }
+         #bestSeller {
+             border: none;
+             height: 440px;
+             display: flex;
+             gap: 30px;
+             width: 80%;
+             margin: auto;
+         }
+         #bestSeller>div {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+             width: 300px;
+             height: 440px;
+             border-radius: 20px;
+         }
+         .i {
+             width: 100%;
+             height: 230px;
+         }
+         .b {
+            width: 100%;
+            height: 38px;
+            border-radius: 5px;
+            background-color: #475d4b;
+            color: aliceblue;
+            border: none;
+            cursor: pointer;
+
+         }
+         #btn1 {
+            margin-top: 10px;
+         }
+         #btn2 {
+            margin-top: 30px;
+         }
+         #btn3 {
+            margin-top: 46px;
+         }
+         #btn4 {
+          margin-top: 28px;  
+         }
+         #trust, #bel, #ads {
+            width: 80%;
+            margin: auto;
+         }
+         #trst, #be {
+            width: 100%;
+         }
+         #spotlight{
+            border: none;
+            height: 300px;
+            width: 80%;
+            margin: auto;
+         }
+         #solution{
+         border: none;
+            height: 300px;
+            width: 80%;
+            margin: auto;
+        }
+         #footer {
+            border: none;
+            height: 350px;
+            display: flex;
+            background-color: #f0f5eb;
+           
+         }
+         #footer>div {
+            border: none;
+            width: 25%;
+
+         }
+         p {
+           text-align: center;
+           color: rgb(78, 76, 76);
+           cursor: pointer;
+         }
+         p:hover {
+            color: green;
+         }
+         .a {
+          color: black;
+          margin-left: 80px;
+          margin-top: 50px;
+         }
+         #mail {
+            width: 250px;
+            height: 30px;
+         }
+         #bt {
+            width: 50%;
+            height: 38px;
+             margin-top: 20px;
+            background-color: #475d4b;
+            color: aliceblue;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+
+         }
+         .s {
+            width: 100%;
+            margin-right: -100px;
+         }
+         .gride-slide {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            height: 260px;
+            width: 200px;
+            margin-right: 20px;
+            border-radius: 5px;
+            background-color: #e5f0da;
+         }
+         /* .gride-slider-wrap {
+            border: 1px solid black;
+            width: 80%;
+            margin: auto;
+         } */
+         .gride-slides {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            height: 200px;
+            width: 200px;
+            margin-right: 20px;
+            border-radius: 5px;
+            background-color: #e5f0da;
+         }
+         iframe {
+            width: 100%;
+            height: 550px;
+         }
+         #media {
+            margin-bottom: 100px;
+            width: 80%;
+            margin: auto;
+         }
+         #ads>img {
+            width: 100%;
+            border-radius: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+         }
+         #download {
+            border: none;
+            width: 100%;
+            height: 550px;
+            display: flex;
+           background-color: #e5f0da;;
+         }
+         #app {
+            margin-left: 200px;
+            font-size: 50px;
+            margin-top: 200px;
+            font-weight: bold;
+            background-color: #475d4b;
+           color: rgb(205, 216, 205);
+         }
+         #down {
+            margin-left: 50px;
+            margin-top: 50px;
+         }
+         .d {
+            width:300px;
+            margin-left: 50px;
+         }
+         #d {
+          margin-left: 200px;
+         }
+         h3 {
+            text-align: center;
+         }
+    
+    </style>
+</head>
+<body>
+    <div id="navbar">
+          <div id="upperNav">
+            <a id="log" href="login.html">Login</a>
+            <img id="pic1" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/BVO_220_x_220.png?v=1653304683" alt="">
+            <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Brave_500_x_500_V3_480x.png?v=1653046388" alt="">
+            <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/BVL_500_x_500_V3_480x.png?v=1653046407" alt="">
+            <a id="search" href="#">Search</a>
+            <a id="cart" href="#">Cart</a>
+          </div>
+
+          <div id="lowerNav">
+                <div> SHOP ALLL</div>
+                <div>NEW ARRIVALS</div>
+                <div>BESTSELLERS</div>
+                <div>SKIN CARE</div>
+                <div>HAIR CARE</div>
+                <div>BODY CARE</div>
+                <div>PERFUMES</div>
+                <div>COMBOS</div>
+                <div>BUILD A BOX</div>
+          </div>
+    </div>
+
+    
+        <div class="gride-slider-wrap">
+            <div class="gride-slider">
+                    <img id="i1" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/1200x399_2_1500x.png?v=1654766303" alt="">
+            </div>
+    
+            <div class="gride-slider">
+                    <img id="i2" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/1200x399_1_59ab296a-15d5-4e1c-84dd-bd35b002e4ce_1500x.png?v=1654536568" alt="">
+            </div>
+    
+        </div>
+      
+       
+    <div id="choice">
+       <img id="choicePic" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Flexi-Box-1200x235_1500x.jpg?v=1655203182" alt="">
+    </div>
+    <p id="bestseller">----------BESTSELLERS----------</p>
+
+    <div id="bestSeller">
+        <div>
+            <img class="i" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Exfoliate-01_1_700x.jpg?v=1655010286" alt="">
+            <p>EXFOLIATE FACE AND BODY SCRUB GRIT, 75GM</p>
+            <P>Gentle exfoliation nourishing and skin brightening</P>
+            <h3> ₹193 <span></span></h3>
+            <button onclick="nextPage()" id="btn1" class="b">ADD TO CART</button>
+        </div>
+
+        <div>
+            <img class="i" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/products/EyeLift-01_4ac1ff22-cbb1-4b18-8b9e-11204b255113_700x.jpg?v=1652340587" alt="">
+            <p>EYE LIFT UNDER CREAM, 20GM </p>
+            <P>Repairs Dark Cicles, Puffy Eyes 7 Wrinkles</P>
+            <h3>₹285 <span></span></h3>
+            <button onclick="p2()" id="btn2" class="b">ADD TO CART</button>
+        </div>
+
+        <div>
+            <img class="i" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/products/C-GlowFaceWash-01_2_700x.jpg?v=1652340405" alt="">
+            <p>C-GLOW FACE WASH 100ML</p>
+            <P>De Tan & Brightening</P>
+            <h3>₹225 <span></span></h3>
+            <button onclick="p3()" id="btn3" class="b">ADD TO CART</button>
+        </div>
+
+        <div>
+            <img class="i" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/products/NicoLips-01_77788ac8-4061-459a-bfb5-f5b5068c1dfa_700x.jpg?v=1652340499" alt="">
+            <p>NicoLips Lip Bightening Scrub, 20gm </p>
+            <P>Lip Brightening, Nousrishing & Repairing</P>
+            <h3>₹399 <span></span></h3>
+            <button onclick="p4()" id="btn4" class="b">ADD TO CART</button>
+        </div>
+    </div>
+
+    <p id="spot">----------IN THE SPOTLIGHT----------</p>
+    
+    <div id="spotlight">
+        <div class="grid-slider-wrap">
+            <div class="gride-slide">
+                    <img class="s" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Summer_Essentials_V1_460x460_1962bedb-04b6-4327-9bbe-f7f4bcf1d187_460x460.png?v=1650365075" alt="">
+                    <p class="p">Summer Esentials</p>
+            </div>
+    
+            <div class="gride-slide">
+                    <img class="s" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Sensitive_Skin_V1_460x460_9fe71496-7c02-4c37-8154-eaceb4ef10e4_460x460.png?v=1650365150" alt="">
+                    <p class="p">Sensitive Skin</p>
+            </div>
+    
+            <div class="gride-slide">
+                <img class="s" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Body_Care_V2_460x460.png?v=1651700520" alt="">
+                <p class="p">Body Care</p>
+           </div>
+    
+           <div class="gride-slide">
+            <img class="s" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Skin_Care_V1_460x460_3c211a79-3489-4914-b8c6-dae23fb195cc_460x460.png?v=1650365344" alt="">
+            <p class="p">Skin Care</p>
+           </div>
+    
+           <div class="gride-slide">
+            <img class="s" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Hair_Care_V1.1_1_460x460_2dec5f68-3c7d-4aa3-a3eb-b08c792bc005_460x460.png?v=1650365899" alt="">
+            <p class="p">Hair Care</p>
+           </div>
+
+           <div class="gride-slide">
+            <img class="s" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Detan_Exfoliation_V1_460x460_8fd7c15d-507c-4dc8-a785-6db9917a6179_460x460.png?v=1650367190" alt="">
+            <p class="p">Exfoliation</p>
+           </div>
+
+           <div class="gride-slide">
+            <img class="s" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Skin_Hydration_V1_460x460_95dcd256-131e-4bf6-9b83-c4c714480172_460x460.png?v=1650367231" alt="">
+            <p class="p">SKin Hydration</p>
+           </div>
+
+           <div class="gride-slide">
+            <img class="s" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Hair_Nourishment_V1_1_460x460.png?v=1651696868" alt="">
+            <p class="p">Hair Nourishment</p>
+           </div>
+
+
+        </div>
+    </div>
+     
+    <p id="sol">----------FIND SOLUTIONS FOR----------</p>
+    <div id="solution">
+        <div class="grid-slider-wraper">
+            <div class="gride-slides">
+                    <img class="s" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Dry_Dull_Lips_460x460.png?v=1652016690" alt="">
+            </div>
+    
+            <div class="gride-slides">
+                    <img class="s" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Acne_1_460x460_97feb0d2-02fd-4592-ad4c-f6da776b1833_460x460.png?v=1650367469" alt="">
+            </div>
+    
+            <div class="gride-slides">
+                <img class="s" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Hair_loss_Thinning_460x460_46d34a07-a716-49dd-a9d2-b63209ac1143_460x460.png?v=1650367443" alt="">
+           </div>
+    
+           <div class="gride-slides">
+            <img class="s" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Skin_Brightening_1_20b6b4c3-86f5_460x460.png?v=1650367496" alt="">
+           </div>
+    
+           <div class="gride-slides">
+            <img class="s" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Pigmentation_1_d2c81415-0e29-42b_460x460.png?v=1650367519" alt="">
+           </div>
+
+           <div class="gride-slides">
+            <img class="s" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Dark_Circles_4_460x460_4bcb3077-0357-4efc-ad06-9b7f7547328c_460x460.png?v=1650367831" alt="">
+           </div>
+
+           <div class="gride-slides">
+            <img class="s" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Tan_Removal_460x460_53aabbb6-f4a1-44f0-b690-659abbbf9a32_460x460.png?v=1650367545" alt="">
+           </div>
+
+           <div class="gride-slides">
+            <img class="s" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Oil_Control_80b8b076-308d-470b-b_460x460.png?v=1650367861" alt="">
+           </div>
+
+           <div class="gride-slides">
+            <img class="s" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Dandruff_5f511893-20f4-4a0a-9062_460x460.png?v=1650367901" alt="">
+           </div>
+        </div>
+    </div>
+
+  
+
+
+    <div id="trust"><img id="trst" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Desktop_Brand_Comms_Banner_V2.1_1500x.png?v=1651661695" alt=""></div>
+     
+    <iframe src="https://www.youtube.com/embed/65MyOTIWarA" frameborder="0"></iframe>
+
+    <p id="med">----------MEDIA COVERAGE----------</p>
+    <div id="media">
+        <div class="grid-slider-wrapper">
+            <div class="gride-slides">
+                    <img class="s" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/ANI_1_460x460.png?v=1652796529" alt="">
+            </div>
+    
+            <div class="gride-slides">
+                    <img class="s" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/The_Financial_Express_1_460x460.png?v=1652796573" alt="">
+            </div>
+    
+            <div class="gride-slides">
+                <img class="s" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Your_Story_11328cdb-2c21-49f0-8f_460x460.png?v=1650368163" alt="">
+           </div>
+    
+           <div class="gride-slides">
+            <img class="s" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Mint_460x460_554c9975-d981-4b31-8b19-207c9153846e_460x460.png?v=1650368210" alt="">
+           </div>
+    
+           <div class="gride-slides">
+            <img class="s" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/PinkVilla_460x460_5dc5a37a-9af9-450c-ab0b-0f6cd282c2a3_460x460.png?v=1650368190" alt="">
+           </div>
+
+           <div class="gride-slides">
+            <img class="s" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/TOI_460x460_f53473ac-da04-43f9-a2ba-3d3b99d9e9a1_460x460.png?v=1650368288" alt="">
+           </div>
+
+           <div class="gride-slides">
+            <img class="s" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/BW_460x460_dcd6c999-6863-4ea2-ae4a-5621f5a51507_460x460.png?v=1650368309" alt="">
+           </div>
+
+           <div class="gride-slides">
+            <img class="s" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Cosmopolitan_dd968050-37cd-4a45_460x460.png?v=1650368328" alt="">
+           </div>
+
+           <div class="gride-slides">
+            <img class="s" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/PTI_News_1_460x460.png?v=1652796619" alt="">
+           </div>
+        </div>
+    </div>
+
+    <p id="bell">----------BELLA CASH----------</p>
+    <div id="bel">
+        <img id="be" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Reward_Section_HP_V2_1500x.png?v=1651716290" alt="">
+    </div>
+
+    <div id="ads">
+        <img class="a" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Banner3_1500x.png?v=1650368510" alt="">
+        <img class="a" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Banner4_1500x.png?v=1650362489" alt="">
+        <img class="a" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/HP_Perfume_Category_Banner_V2_1500x.png?v=1651687105" alt="">
+    </div>
+
+    <div id="download">
+        <div>
+            <img id="down" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Download_our_App_Section_Image_V_460x460.png?v=1650369432"  alt="">
+        </div>
+          <div>
+            <p id="app">DOWNLOAD OUR APP</p>
+            <img id="d" class="d" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/playstore_460x460_efa998ac-e0d8_460x460.png?v=1650369394" alt="">
+            <img class="d" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/app-store-card_460x460_35fc55d1_460x460.png?v=1650369409" alt="">
+          </div>
+    </div>
+  
+    <div id="footer">
+        <div>
+            <u class="a">ONLINE PRESENCE</u>
+            <p>Amazon</p>
+            <p>Nykaa</p>
+            <p>Flipkart</p>
+            <p>TataCliq</p>
+            <p>Snapdeal</p>
+        </div>
+
+        <div>
+            <u class="a">INFORMATION</u>
+            <p>Blogs</p>
+            <p>Newsroom</p>
+            <p>Terms & Conditions</p>
+            <p>Privacy Policy</p>
+            <p>Refund & Return</p>
+            <p>Shipping Policy</p>
+            <p>Reward Policy</p>
+        </div>
+
+        <div>
+            <u class="a">SUPPORT</u>
+            <p>About us</p>
+            <p>Contact us</p>
+            <p>Order Tracking</p>
+            <p>All Products</p>
+            <p>FAQ</p>
+        </div>
+
+        <div>
+             <u class="a">CONTACT US</u>
+            <P> <span><i class="fa-solid fa-house-chimney"></i></span> Office Location: Plot no. 417, Udyog Vihar Phase III, Gurgaon,Haryana ,India</P>
+            <P> <span><i class="fa-solid fa-envelope"></i></span> shop@bellavitaorganic.com</P>
+            <P> <span><i class="fa-solid fa-phone"></i></span> +91 9311732440</P>
+            <p>Timing:9:00 AM To 9:00 PM , Monday To Sunday</p>
+        </div>
+        <div>
+            <u class="a">OUR NEWLETTER</u>
+            <P>Sign up here to get the latest news, updates and special offers delivered to your inbox.</P>
+            <P>Plus, you'll be the first to know about our discounts!</P>
+            <input id="mail" type="text" name="" id="" placeholder="Enter Your Email Address">
+            <br>
+            <button id="bt">SUBMIT</button>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>
+
+<script>
+
+var elem = document.querySelector(".gride-slider-wrap")
+    var flkty = new Flickity(elem, {
+        cellAlign :"left",
+        contain : true,
+        // groupCells: true,
+        wrapAround : true,
+        freeScroll : true,
+    })
+
+    var elem = document.querySelector(".grid-slider-wrap")
+    var flkty = new Flickity(elem, {
+        cellAlign :"left",
+        contain : true,
+        // groupCells: true,
+        wrapAround : true,
+        freeScroll : true,
+    })
+
+    var elem = document.querySelector(".grid-slider-wraper")
+    var flkty = new Flickity(elem, {
+        cellAlign :"left",
+        contain : true,
+        // groupCells: true,
+        wrapAround : true,
+        freeScroll : true,
+    })
+
+    var elem = document.querySelector(".grid-slider-wrapper")
+    var flkty = new Flickity(elem, {
+        cellAlign :"left",
+        contain : true,
+        // groupCells: true,
+        wrapAround : true,
+        freeScroll : true,
+    })
+
+    let nextPage= ()=> {
+        window.location.href = "product.html"
+    }
+
+    let p2= ()=> {
+        window.location.href = "product2.html"
+    }
+    let p3= ()=> {
+        window.location.href = "product4.html"
+    }
+    let p4= ()=> {
+        window.location.href = "product3.html"
+    }
+   
+</script>

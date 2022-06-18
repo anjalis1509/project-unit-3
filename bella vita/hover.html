@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        #cont {
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+        }
+        section {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            position: relative;
+            float: left;
+            color: white;
+            font-family: cursive;
+            font-size: 20px;
+            display: none;
+            animation-name: slide;
+            opacity: .7;
+            animation-duration: 2s;
+        }
+
+        span{
+            color: white;
+            font-family: cursive;
+            font-size: 20px;
+            position: relative;  
+        
+        }
+        #cont:hover {
+            display: block;
+        }
+        @keyframes slide {
+            0%{opacity: 0;}
+            100%{opacity: .7;}
+        }
+     </style>
+</head>
+<body>
+    <div id="cont"></div>
+
+    <section>
+        <span>hey there</span>
+    </section>
+</body>
+</html>

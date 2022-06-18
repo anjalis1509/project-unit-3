@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+  ></script>
+    <style>
+        #container {
+            border: none;
+            height: 980px;
+            width: 90%;
+            margin: auto;
+            display: flex;
+            margin-left: 130px;
+        }
+        #box1 {
+            border: none;
+            height: 950px;
+            width: 50%;
+            
+        }
+        img {
+            height: 100px;
+            width: 45%;
+            margin-left: 130px;
+            margin-top: 30px;
+        }
+        #options {
+          text-align: center;
+          font-size: 15px;
+          margin-right: 60px;
+        }
+        #span1 {
+            margin-left: 200px;
+        }
+        input {
+            margin-top: 20px;
+            
+        }
+        #city {
+          width: 30%;  
+          height: 30px;
+        }
+        #state {
+          width: 30%;
+          height: 30px;
+        }
+        #pin {
+            width: 30%;
+            height: 30px;
+        }
+        #mail, #country, #firstName, #lastName, #company, #address, #apartment, #number {
+            width: 93%;
+            height: 35px;
+            border-radius: 5px;
+            border: 1px solid #c8c8c8;
+            outline-color: black;
+        }
+        .p1 {
+            font-size: 20px;
+        }
+        #span1 {
+            font-size: 15px;
+            color: #736f6f;
+        }
+        .s {
+            cursor: auto;
+            color: #736f6f;
+        }
+        #shipping {
+            margin-left: 300px;
+            height: 50px;
+            border-radius: 5px;
+            background-color: #475d4b;
+            color: white;
+            width: 30%;
+            cursor: pointer;
+            border: none;
+        }
+        #inner_div {
+            border: 1px solid black;
+            width: 100%;
+            height: 140px;
+            margin-right: 200px;
+            display: flex;
+            border-left: none;
+           border-right: none;
+           border-top: none;
+           border-bottom: none;
+           
+             
+        }
+        #img2 {
+          width:20%;  
+          height: 60px; 
+          margin-bottom: 0px;
+          
+        }
+        #the {
+           margin-top: 50px; 
+           margin-right:10px;
+           width: 25%;
+        }
+        #pri {
+            margin-top: -360px; 
+           margin-left: 400px;
+        }
+        #discount {
+            width: 65%;
+            height: 35px; 
+            border-radius: 5px;
+            outline-color: black;
+            border: 1px solid #c8c8c8 ;
+            margin-left: 25px;
+            margin-bottom: 25px;
+            
+            
+        }
+        #apply {
+            width: 8%;
+            padding: 10px;
+            padding-right: 50px;
+            padding-left: 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #475d4b;
+            color: white;
+            outline-color: red;
+            cursor: pointer;
+        }
+       #inner_div2 {
+           border: 1px solid black;
+           margin-left: 75px;
+           width: 73%;
+           border-left: none;
+           border-right: none;
+           border-top: 1px solid rgb(159, 158, 158);
+           border-bottom: 1px solid rgb(204, 199, 199);
+           
+       }
+       #inner_div3 {
+           
+           margin-left: 75px;
+           width: 73%;
+           height: 90px;
+           border-left: none;
+           border-right: none;
+           border-top: 1px solid rgb(204, 199, 199);
+           border-bottom: 1px solid rgb(204, 199, 199);
+       }
+       #inner_div4 {
+           border: 1px solid black;
+           margin-left: 75px;
+           width: 73%;
+           height: 90px;
+           border-left: none;
+           border-right: none;
+           border-top: 1px solid rgb(204, 199, 199);
+           border-bottom: NONE;
+          
+       }
+       #subTotal {
+           margin-left: 350px;
+           margin-top: 168px;
+           
+           
+        
+       }
+       #ship {
+           margin-left: 150px;
+           font-size: 15px;
+       }
+       #inr {
+          margin-left: 200px; 
+       }
+       #total {
+           font-size: 30px;
+           margin-left: 350px;
+           margin-top: 79px;
+           
+       }
+      
+       #box2 {
+          
+          width: 40%;
+          background-color: #f7f7f7;
+       }
+       
+    </style>
+</head>
+<body>
+
+
+   <div id="container">
+       <div id="box1">
+
+           <div>
+               <img id="fabbag" onclick="home()" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/bellavita-logo_256x256_2cf787ef.png?49243" alt="">
+               <p onclick="cart()" id="options" style="cursor: pointer;">Cart > <span class="s">Information></span> <span class="s">Shipping></span><span class="s">Payment</span></p>
+           </div>
+
+              <div>
+                 <p class="p1">Contact information <span id="span1">Already have an account? Log in</span></p> 
+                 <form action="">
+                     <input id="mail" type="mail" placeholder="Email">
+                     <br>
+                    
+                     <span><input type="checkbox" ><span></span> Email me with news and offers</span>
+                     
+                    <p class="p1">Shipping address</p>
+                   <select name="" id="country">
+                       <option value="">India</option>
+                   </select>
+                   <br>
+                   <input id="firstName" type="text" placeholder="First name">
+                   <br>
+                   <input id="lastName" type="text" placeholder="Last name">
+                   <br>
+                   <input id="company" type="text" placeholder="Company (optional)"> 
+                   <br>
+                   <input id="address" type="text" placeholder="address">
+                   <br>
+                   <input id="apartment" type="text" placeholder="Apartment, suite,etc.(optional)">
+                   <br>
+                   <input id="city" type="text" placeholder="City">
+                   <select name="State" id="state">
+                       <option value="">State</option>
+                       <option value="">Andman and Nicobar Islands </option>
+                       <option value="">Andhra Pradesh</option>
+                       <option value="">Arunachal Pradesh</option>
+                       <option value="">Assam</option>
+                       <option value="">Bihar</option>
+                       <option value="">Chandigarh</option>
+                       <option value="">Chattisgarh</option>
+                       <option value="">Dadra and Nagar Haveli</option>
+                       <option value="">Daman and Diu</option>
+                       <option value="">Delhi</option>
+                       <option value="">Goa</option>
+                       <option value="">Gujarat</option>
+                       <option value="">Haryana</option>
+                       <option value="">Himachal Pradesh</option>
+                       <option value="">Jammu and Kashmir</option>
+                       <option value="">Jharkhand</option>
+                       <option value="">Karnataka</option>
+                       <option value="">Kerala</option>
+                       <option value="">Ladakh</option>
+                       <option value="">Lakshadweep</option>
+                       <option value="">Madhya Pradesh</option>
+                       <option value="">Maharashtra</option>
+                       <option value="">Manipur</option>
+                       <option value="">Meghalaya</option>
+                       <option value="">Mizoram</option>
+                       <option value="">Nagaland</option>
+                       <option value="">Odisha</option>
+                       <option value="">Puducherry</option>
+                       <option value="">Punjab</option>
+                       <option value="">Rajasthan</option>
+                       <option value="">Sikkim</option>
+                       <option value="">Tamil Nadu</option>
+                       <option value="">Telangana</option>
+                       <option value="">Tripura</option>
+                       <option value="">Uttar Pradesh</option>
+                       <option value="">Uttarakhand</option>
+                       <option value="">West Bengal</option>
+                   </select>
+                   <input  type="text" name="" id="pin" placeholder="PIN code">
+                   <br>
+                  <input id="number" type="number" placeholder="Phone">
+                  <br>
+                  <input type="checkbox" name="" id=""><span>Save this information for next time</span>
+                 </form>
+                 <p onclick="cart2()" style="cursor: pointer;"> >Return to cart <span><button onclick="order()" id="shipping">Continue to shipping</button></span></p>
+              </div>
+       </div>
+
+
+       
+       <div id="box2">
+             <div id="inner_div">
+
+                  
+                      <img id="img2" style="margin-right: 79px;" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Exfoliate-01_1_small.jpg?v=1655010286" alt=""><span id="the">The AweSummer May Fab Bag</span><span id="pri"></span>
+                   
+             </div>
+             
+             <div id="inner_div2">
+                <input id="discount" type="text" placeholder="Discount code" > 
+                <button id="apply">Apply</button>
+             </div>
+            
+
+             <div id="inner_div3">
+               <p>Subtotal <span></span></p>
+               <p>Shipping<span id="ship">Calculated at next step</span></p>
+             </div>
+
+             <div id="inner_div4">
+                 <p>Total <span id="inr">INR <span id="total"></span></span></p>
+             </div>
+       </div>
+   </div> 
+</body>
+</html>
+
+<script>
+
+    // var totalAmount = JSON.parse(localStorage.getItem("total"))
+    // console.log(totalAmount)
+
+
+
+    //  totalAmount.forEach(function(el){
+
+    //     var price = document.createElement("p")
+    //     price.innerHTML = el.total
+    //     price.setAttribute("id", "pri")
+
+    //     var subTotal = document.createElement("p")
+    //     subTotal.innerText = el.total
+    //     subTotal.setAttribute("id", "subTotal")
+
+    //     var total = document.createElement('p') 
+    //     total.innerText = el.total
+    //     total.setAttribute("id", "total")
+
+    //     document.getElementById("box2").append( price,subTotal, total)
+    //  })
+
+    
+
+
+    function order(){
+        alert("Your Order is Successfully Placed")
+    }
+
+
+function home(){
+    window.location.href = "index.html"
+}
+</script>
